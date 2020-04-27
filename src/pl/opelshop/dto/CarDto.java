@@ -13,17 +13,17 @@ public class CarDto {
     private BigDecimal price;
     private EngineTypeEnum fuelType;
     private BigDecimal carYear;
-    private BigDecimal avgBurning;
+    private BigDecimal averageBurning;
 
 
-    public CarDto(String producer, String model, BigDecimal engineVolume, BigDecimal price, EngineTypeEnum fuelType, BigDecimal carYear, BigDecimal avgBurning) {
+    public CarDto(String producer, String model, BigDecimal engineVolume, BigDecimal price, EngineTypeEnum fuelType, BigDecimal carYear, BigDecimal averageBurning) {
         this.producer = producer;
         this.model = model;
         this.engineVolume = engineVolume;
         this.price = price;
         this.fuelType = fuelType;
         this.carYear = carYear;
-        this.avgBurning = avgBurning;
+        this.averageBurning = averageBurning;
     }
 
     public String getProducer() {
@@ -70,12 +70,12 @@ public class CarDto {
         this.carYear = carYear;
     }
 
-    public BigDecimal getAvgBurning() {
-        return avgBurning;
+    public BigDecimal getAverageBurning() {
+        return averageBurning;
     }
 
-    public void setAvgBurning(BigDecimal avgBurning) {
-        this.avgBurning = avgBurning;
+    public void setAverageBurning(BigDecimal averageBurning) {
+        this.averageBurning = averageBurning;
     }
 
     @Override
@@ -87,7 +87,7 @@ public class CarDto {
                 ", price=" + price +
                 ", fuelType=" + fuelType +
                 ", carYear=" + carYear +
-                ", averageBurning=" + avgBurning + "l/100km" +
+                ", averageBurning=" + averageBurning + "l/100km" +
                 '}';
     }
 }

@@ -7,8 +7,6 @@ public class Main {
 
         MenuService menu = new MenuService();
 
-        menu.showMenu();
-
-
+        menu.showMainMenu();
     }
 }

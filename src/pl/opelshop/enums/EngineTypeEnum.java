@@ -10,6 +10,4 @@ public enum EngineTypeEnum {
     EngineTypeEnum(String fuelType) {
         this.fuelType = fuelType;
     }
-
-
 }
