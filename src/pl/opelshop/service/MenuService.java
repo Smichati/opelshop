@@ -22,15 +22,11 @@ public class MenuService {
         System.out.println("4. Show the combined price of the cars.");
         System.out.println("5. Show how much car would burn on the chosen distance.");
         choiceSelector(scanner.nextInt());
+        showMainMenu();
     }
+
 
     private void choiceSelector(int choiceNumber) {
-        do {
-            selectOption(choiceNumber);
-        }while (choiceNumber<6);
-    }
-
-    private void selectOption(int choiceNumber) {
         switch (choiceNumber) {
             case 1:
                 carlist.add(carOperationsService.addCar());
@@ -61,14 +57,15 @@ public class MenuService {
         int choice = scanner.nextInt();
         do {
             selectBurningOption(choice);
-        }while(choice==1 || choice>=3 || choice<=0);
+        } while (choice == 1 || choice >= 3 || choice <= 0);
     }
-    
+
     private void selectBurningOption(int choice) {
-        
+
         switch (choice) {
             case 1:
                 carOperationsService.getAverageBurning(carlist);
+                showMainMenu();
                 break;
             case 2:
                 System.out.println("Return.");
