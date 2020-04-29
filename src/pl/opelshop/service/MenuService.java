@@ -6,7 +6,6 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
-
 public class MenuService {
 
     CarOperationsService carOperationsService = new CarOperationsService();
@@ -24,7 +23,6 @@ public class MenuService {
         choiceSelector(scanner.nextInt());
         showMainMenu();
     }
-
 
     private void choiceSelector(int choiceNumber) {
         switch (choiceNumber) {
