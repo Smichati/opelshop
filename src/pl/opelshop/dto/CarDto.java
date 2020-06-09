@@ -4,6 +4,7 @@ package pl.opelshop.dto;
 import pl.opelshop.enums.EngineTypeEnum;
 
 import java.math.BigDecimal;
+import java.util.List;
 
 public class CarDto {
 
@@ -54,6 +55,10 @@ public class CarDto {
         return price;
     }
 
+    public BigDecimal setPrice() {
+        return price;
+    }
+
     public EngineTypeEnum getFuelType() {
         return fuelType;
     }
@@ -78,6 +83,7 @@ public class CarDto {
         this.averageBurning = averageBurning;
     }
 
+
     @Override
     public String toString() {
         return "CarDto{" +
@@ -89,5 +95,12 @@ public class CarDto {
                 ", carYear=" + carYear +
                 ", averageBurning=" + averageBurning + "l/100km" +
                 '}';
+    }
+    public void showCombinedPrice(List<CarDto> carlist) {
+        for (CarDto combinedPriceResult : carlist) {
+            for ()
+
+
+        }
     }
 }

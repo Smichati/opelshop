@@ -37,7 +37,7 @@ public class MenuService {
                 System.out.println("The amount of cars equals: " + carlist.size());
                 break;
             case 4:
-                System.out.println("The combined price of cars equals: ");
+                showCombinedPrice();
                 break;
             case 5:
                 showBurningMenu();
@@ -74,4 +74,5 @@ public class MenuService {
         }
     }
 }
+
 
